@@ -9,10 +9,10 @@ model = pickle.load(open('model.pkl','rb'))
 
 
 def main():
-    st.sidebar.header("Diabetes Risk Prediction for Females with the datset found on Kaggle")
-    st.sidebar.text("This a Web app that tells you if you are a female whether you are at risk for Diabetes or not.")
+    st.sidebar.header("Diabetes Risk Prediction for Females.")
+    st.sidebar.text("This a Web app that tells you Wheather you have Diabetes or not.")
     st.sidebar.header("Just fill in the information below")
-    st.sidebar.text("The AdaBoost Classifier was used.")
+    st.sidebar.text("The RandomForestClassifier was used.")
 
 
 
@@ -31,8 +31,8 @@ if st.button('Predict'):
     result = model.predict(inputs)
     updated_res = result.flatten().astype(int)
     if updated_res == 0:
-        st.write("Not very Proabable you will get Diabetes soon but still take good care of yourself regardless")
+        st.write("Sorry, You Might Have Diabetes. Take Care Of Yourselves")
     else:
-        st.write("It is Probable you might get a Diabetes soon therfore you should take better care of yourself")
+        st.write("You are Safe now. But take care of your Health.")
 if __name__ =='__main__':
     main()
