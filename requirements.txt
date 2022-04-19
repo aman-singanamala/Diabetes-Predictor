@@ -8,7 +8,7 @@ astor==0.8.1
 asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
 astunparse==1.6.3
 async-timeout @ file:///tmp/build/80754af9/async-timeout_1637851218186/work
-attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
+
 backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
 backports.zoneinfo==0.2.1
 beautifulsoup4 @ file:///tmp/build/80754af9/beautifulsoup4_1631874778482/work
